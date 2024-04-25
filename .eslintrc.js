@@ -1,0 +1,6 @@
+{
+  "env": {
+    "jest/globals": true
+  }
+}
+
