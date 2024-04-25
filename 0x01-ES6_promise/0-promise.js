@@ -9,4 +9,3 @@ export default function getResponseFromAPI() {
 // The function can be used as follows:
 const response = getResponseFromAPI();
 console.log(response instanceof Promise); // This will log 'true'
-

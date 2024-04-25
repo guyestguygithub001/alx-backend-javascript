@@ -4,4 +4,3 @@ export default function uploadPhoto(filename) {
   const error_message = `${filename} cannot be processed`;
   throw new Error(error_message);
 }
-
