@@ -14,8 +14,7 @@ export default function iterateThroughObject(reportWithIterator) {
     return employeeNames;
 }
 
-// Example usage
+//  usage
 const reportWithIterator = ["John Doe", "Guillaume Salva", "Kanye East", "Jay Li"];
 const result = iterateThroughObject(reportWithIterator);
 console.log(result);
-
