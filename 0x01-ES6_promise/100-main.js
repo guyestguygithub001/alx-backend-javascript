@@ -6,4 +6,3 @@ const test = async () => {
 };
 
 test();
-
