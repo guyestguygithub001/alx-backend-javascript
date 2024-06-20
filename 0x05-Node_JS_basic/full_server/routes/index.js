@@ -1,19 +1,8 @@
-import AppController from '../controllers/AppController';
-import StudentsController from '../controllers/StudentsController';
+const express = require('express');
+const AppController = require('../controllers/AppController');
+const StudentsController = require('../controllers/StudentsController');
 
-// Function to associate routes with controller actions
-const mapRoutes = (app) => {
-  // Route for homepage
-  app.get('/', AppController.getHomepage);
-  
-  // Route for retrieving all students
-  app.get('/students', StudentsController.getAllStudents);
-  
-  // Route for retrieving students by major
-  app.get('/students/:major', StudentsController.getAllStudentsByMajor);
-};
+const router = express.Router();
 
-// Export the mapRoutes function as both default and named export
-export default mapRoutes;
-module.exports = mapRoutes;
-
+router.get('/', AppController.getHomepage);
+router.get('/students', StudentsController.
